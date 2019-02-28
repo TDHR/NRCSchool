@@ -18,10 +18,10 @@
             }
         },
         mounted () {
-            import('../../../assets/data/cooperation/coperation.json')
-                .then(data =>{
-                    this.cooperationList = data.data
-                })
+            // import('../../../assets/data/cooperation/coperation.json')
+            //     .then(data =>{
+            //         this.cooperationList = data.data
+            //     })
         },
         components:{
             'v-cooperationInner':cooperationInner

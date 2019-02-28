@@ -26,13 +26,13 @@
         },
         created() {
 
-            import("../../assets/data/teacher/"+this.classType+"/teacher.json")
-                .then(data => {
-
-                    this.detailData = data.data;
-
-
-                })
+            // import("../../assets/data/teacher/"+this.classType+"/teacher.json")
+            //     .then(data => {
+            //
+            //         this.detailData = data.data;
+            //
+            //
+            //     })
         }
     };
 </script>

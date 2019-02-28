@@ -38,14 +38,14 @@ import signUp from '../common/signUp.vue';
         },
         mounted(){
                 this.getType();
-                import('../../assets/data/class/'+this.classType+'/banner.json')
-                    .then(data => {
-                        this.bannerData = data.data;
-                        import('../../assets/images/'+this.bannerData.bannerImg)
-                            .then(img => {
-                                this.bannerImg = img;
-                            })
-                    })
+                // import('../../assets/data/class/'+this.classType+'/banner.json')
+                //     .then(data => {
+                //         this.bannerData = data.data;
+                //         import('../../assets/images/'+this.bannerData.bannerImg)
+                //             .then(img => {
+                //                 this.bannerImg = img;
+                //             })
+                //     })
 
         },
         methods:{

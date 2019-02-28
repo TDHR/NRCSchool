@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <v-header></v-header>
-    <v-suspension></v-suspension>
-    <router-view ></router-view>
+    <!--<v-suspension></v-suspension>-->
+    <router-view></router-view>
     <!--<div>-->
       <!--<el-button type="primary"  @click="dialogFormVisible  = true">主要按钮</el-button>-->
     <!--</div>-->

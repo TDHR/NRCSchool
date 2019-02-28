@@ -25,11 +25,11 @@
         },
         mounted() {
             this.compangLogName = this.cooperationData.logo;
-
-            import('../../../assets/images/'+this.compangLogName)
-                .then(img => {
-                    this.companyLogo = img;
-                })
+            //
+            // import('../../../assets/images/'+this.compangLogName)
+            //     .then(img => {
+            //         this.companyLogo = img;
+            //     })
         },
         components:{
 

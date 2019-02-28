@@ -41,14 +41,14 @@
             }
         },
         created() {
-
-            import("../../assets/data/class/"+this.classType+"/classDetail.json")
-                .then(data => {
-
-                    this.detailData = data.data;
-                    this.classTime = this.detailData.classTime
-
-                })
+            //
+            // import("../../assets/data/class/"+this.classType+"/classDetail.json")
+            //     .then(data => {
+            //
+            //         this.detailData = data.data;
+            //         this.classTime = this.detailData.classTime
+            //
+            //     })
         }
     };
 </script>

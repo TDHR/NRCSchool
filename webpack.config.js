@@ -2,7 +2,7 @@ const resolve = require('path').resolve;
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const url = require('url');
-const publicPath = '';
+const publicPath = '/dist/';
 
 module.exports = (options = {}) => ({
   entry: {
@@ -57,7 +57,13 @@ module.exports = (options = {}) => ({
     }),
     new HtmlWebpackPlugin({
       template: 'src/index.html'
-    })
+    }),
+      new webpack.ProvidePlugin({
+        $:'jquery',
+        jQuery:'jquery',
+        jquery:'jquery',
+        'window.jquery':'jquery'
+      })
   ],
   resolve: {
     alias: {
@@ -72,7 +78,7 @@ module.exports = (options = {}) => ({
     port: 3000,
     proxy: {
       '/api/': {
-        target: 'http://127.0.0.1:8080',
+        target: 'http://47.75.125.111:8080',
         changeOrigin: true,
         pathRewrite: {
           '^/api': ''
